@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Request } from '@nestjs/common';
 
 import { AppService } from './app.service';
 
@@ -9,5 +9,18 @@ export class AppController {
   @Get()
   getData() {
     return this.appService.getData();
+  }
+
+  @Get('data')
+  getCommonData() {
+    return this.appService.getCommonData();
+  }
+
+  @Get('search')
+  getSearch(
+    @Request() request
+  ) {
+    const q = (request.query.q ?? '').toLowerCase();
+    return this.appService.getCommonData().filter(( { name } ) => name.toLowerCase().includes(q));
   }
 }
