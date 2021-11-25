@@ -1,4 +1,4 @@
-import type { CommonData } from '@nx-next-nest-sandbox/shared-types';
+import type { CommonData } from '@nx-next-nest-study/shared-types';
 
 export const data: CommonData[] = [
   { id: 1, name: "hoge" },

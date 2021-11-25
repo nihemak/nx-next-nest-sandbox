@@ -1,7 +1,6 @@
-
 import React, { useEffect, useState, useCallback } from 'react';
 
-import type { CommonData } from '@nx-next-nest-sandbox/shared-types';
+import type { CommonData } from '@nx-next-nest-study/shared-types';
 
 import styles from './index.module.css';
 
