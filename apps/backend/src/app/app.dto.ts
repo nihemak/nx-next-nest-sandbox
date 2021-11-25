@@ -1,9 +1,7 @@
-export interface CommonData {
-  name: string;
-};
+import type { CommonData } from '@nx-next-nest-sandbox/shared-types';
 
 export const data: CommonData[] = [
-  { name: "hoge" },
-  { name: "foo" },
-  { name: "bar" },
+  { id: 1, name: "hoge" },
+  { id: 2, name: "foo" },
+  { id: 3, name: "bar" },
 ];

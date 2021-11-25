@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import { CommonData, data } from './app.dto';
+import { data } from './app.dto';
 
 @Injectable()
 export class AppService {
@@ -8,7 +8,7 @@ export class AppService {
     return { message: 'Welcome to backend!' };
   }
 
-  getCommonData(): CommonData[] {
+  getCommonData() {
     return data;
   }
 }
