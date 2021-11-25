@@ -1,14 +1,20 @@
 
-# Start Backend
+# Run Backend
 
 ```
 npx nx run backend:serve
 ```
 
-# Start Frontend
+# Run Frontend
 
 ```
 npx nx run frontend:serve
+```
+
+# Run e2e
+
+```
+npx nx run frontend-e2e:e2e
 ```
 
 # Reference
